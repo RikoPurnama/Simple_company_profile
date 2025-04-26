@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function About() {
@@ -32,9 +33,11 @@ export default function About() {
 
         {/* Kanan: Gambar */}
         <div className="flex-1 flex justify-center">
-          <img
+          <Image
             src="/about.png"
             alt="About Us"
+            width={600}
+            height={500}
             className="max-w-md w-full rounded-2xl"
           />
         </div>

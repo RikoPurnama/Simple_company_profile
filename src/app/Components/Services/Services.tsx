@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Services() {
   return (
     <section id="services" className="py-16 bg-gray-50">
@@ -11,13 +13,17 @@ export default function Services() {
         <div className="grid md:grid-cols-3 gap-10">
           {/* Service Card 1 */}
           <div className="relative p-6 bg-white rounded-xl border border-slate-500/20 overflow-hidden">
-            <img
+            <Image
+            width={100}
+            height={100}
               src="/ai-service.svg"
               alt="AI Services"
               className="absolute -left-10 -top-5 w-52 mb-4 blur-2xl"
             />
             <div className="relative z-10">
-              <img
+              <Image
+              width={100}
+              height={100}
                 src="/ai-service.svg"
                 alt="AI Services"
                 className="w-24 mx-auto mb-4"
@@ -34,13 +40,17 @@ export default function Services() {
 
           {/* Service Card 2 */}
           <div className="relative p-6 bg-white rounded-xl border border-slate-500/20 overflow-hidden">
-            <img
+            <Image
+            width={100}
+            height={100}
               src="/web-dev.svg"
               alt="Web Development"
               className="absolute -left-10 -top-5 w-64 mb-4 blur-2xl"
             />
             <div className="relative z-10">
-              <img
+              <Image
+              width={100}
+              height={100}
                 src="/web-dev.svg"
                 alt="Web Development"
                 className="w-30 mx-auto mb-8"
@@ -57,13 +67,17 @@ export default function Services() {
 
           {/* Service Card 3 */}
           <div className="relative p-6 bg-white rounded-xl border border-slate-500/20 overflow-hidden">
-            <img
+            <Image
+            width={100}
+            height={100}
               src="/web-app.svg"
               alt="Web Application"
               className="absolute -left-10 -top-5 w-52 mb-4 blur-2xl"
             />
             <div className="relative z-10">
-              <img
+              <Image
+              width={100}
+              height={100}
                 src="/web-app.svg"
                 alt="Web Application"
                 className="w-24 mx-auto mb-4"

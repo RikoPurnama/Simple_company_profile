@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Projects() {
   return (
     <section id="projects" className="py-24 bg-gray-50">
@@ -22,7 +24,7 @@ export default function Projects() {
             },
           ].map((project, index) => (
             <div key={index} className="bg-white rounded-xl p-4 shadow hover:shadow-md transition">
-              <img src={project.image} alt={project.title} className="rounded-md w-full h-48 object-cover mb-4" />
+              <Image width={100} height={192} src={project.image} alt={project.title} className="rounded-md w-full h-48 object-cover mb-4" />
               <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
               <p className="text-gray-600">{project.description}</p>
             </div>

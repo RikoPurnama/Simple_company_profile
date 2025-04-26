@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image"; // tambahkan ini
 
 export default function Hero() {
   return (
@@ -30,11 +31,17 @@ export default function Hero() {
       </div>
 
       {/* Background Blur */}
-      <img
-        src="/V.svg"
-        alt="Background"
-        className="absolute w-[500%] h-[500%] object-contain bg-center blur-3xl opacity-85"
-      />
+      <div className="absolute inset-0 w-full h-full">
+        <div className="relative w-full h-full flex items-center justify-center">
+          <Image
+            src="/V.svg"
+            alt="Background"
+            width={1200}
+            height={1200}
+            className="object-contain blur-3xl opacity-85"
+          />
+        </div>
+      </div>
     </section>
   );
 }
